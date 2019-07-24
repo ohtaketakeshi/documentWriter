@@ -1,0 +1,74 @@
+:title: Document Title
+:author: ohtaketakeshi
+:revnumber: 0.0.1
+:revdate: 2019/7/24
+:lang: ja
+:doctype: book
+:pdf-stylesdir: ./themes
+:pdf-style: custom-theme.yml
+:pdf-fontsdir: ./fonts
+:note-caption: Note
+:tip-caption: Tip
+:important-caption: 重要
+:wARNING-caption: 警告
+:caution-caption: 注意
+:example-caption: 例
+:table-caption: 表
+:figure-caption: 図
+:appendix-captin: 付録
+:toc: left
+:toc-title: 目次
+:toc-levels: 3
+:chapter-label:
+:sectnums:
+:sectlinks:
+:source-highlighter: coderay
+:imagesdir: ./images
+:icons: font
+
+
+= {title}
+
+== asciidocとは？
+
+asciidocとは [blue]#軽量マークアップ言語# です
+
+詳しくは<<can_asciidoc,asciidocでできること>>を参照
+
+[[can_asciidoc]]
+== asciidocでできること
+
+.コードハイライト
+[source, json]
+{
+  "hoge" : "fuga",
+  "foo" : [1,2,3]
+}
+
+.結合＋箇条書例
+[cols="1,2a,3a"]
+|====
+|列1|列2|列3
+
+3+|3列結合
+
+.2+|2行縦結合|b-1|c-2
+|b-2|
+* c-3
+* c-4
+** c-5
+|====
+
+[NOTE]
+====
+* format="csv"ではできません
+====
+
+=== シーケンス図
+
+[plantuml]
+----
+actor ユーザー as user
+user -> ログイン : ログインする
+ログイン --> user:
+----

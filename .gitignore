@@ -1,0 +1,5 @@
+/.asciidoctor/
+/main.pdf
+/main.html
+/images/diag-*
+/fonts/unused/
